@@ -24,6 +24,9 @@
 		9F49E606173C90D000A9658A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49E605173C90D000A9658A /* CoreVideo.framework */; };
 		9F49E60A173CB3BA00A9658A /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49E608173CB3BA00A9658A /* CameraView.m */; };
 		9F49E60B173CB3BA00A9658A /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F49E609173CB3BA00A9658A /* CameraView.xib */; };
+		9F49E60F173CF0D900A9658A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49E60E173CF0D900A9658A /* libstdc++.dylib */; };
+		9F49E62C173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49E62B173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a */; };
+		9F49E62E173CF31400A9658A /* ppbox.conf in Resources */ = {isa = PBXBuildFile; fileRef = 9F49E62D173CF31300A9658A /* ppbox.conf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		9F49E607173CB3BA00A9658A /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
 		9F49E608173CB3BA00A9658A /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
 		9F49E609173CB3BA00A9658A /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
+		9F49E60E173CF0D900A9658A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		9F49E62B173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a"; path = "../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi/libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a"; sourceTree = "<group>"; };
+		9F49E62D173CF31300A9658A /* ppbox.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ppbox.conf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F49E62C173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a in Frameworks */,
+				9F49E60F173CF0D900A9658A /* libstdc++.dylib in Frameworks */,
 				9F49E606173C90D000A9658A /* CoreVideo.framework in Frameworks */,
 				9F49E604173C90C800A9658A /* CoreMedia.framework in Frameworks */,
 				9F49E602173C90BF00A9658A /* AVFoundation.framework in Frameworks */,
@@ -90,6 +98,8 @@
 		9F49E5CD173C859700A9658A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F49E62B173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a */,
+				9F49E60E173CF0D900A9658A /* libstdc++.dylib */,
 				9F49E605173C90D000A9658A /* CoreVideo.framework */,
 				9F49E603173C90C800A9658A /* CoreMedia.framework */,
 				9F49E601173C90BF00A9658A /* AVFoundation.framework */,
@@ -113,6 +123,7 @@
 				9F49E5FA173C8A4F00A9658A /* MainView.h */,
 				9F49E5FB173C8A4F00A9658A /* MainView.m */,
 				9F49E5FC173C8A4F00A9658A /* MainView.xib */,
+				9F49E62D173CF31300A9658A /* ppbox.conf */,
 			);
 			path = CameraDemo;
 			sourceTree = "<group>";
@@ -188,6 +199,7 @@
 				9F49E5E5173C859700A9658A /* Default-568h@2x.png in Resources */,
 				9F49E5FE173C8A4F00A9658A /* MainView.xib in Resources */,
 				9F49E60B173CB3BA00A9658A /* CameraView.xib in Resources */,
+				9F49E62E173CF31400A9658A /* ppbox.conf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraDemo/CameraDemo-Prefix.pch";
 				INFOPLIST_FILE = "CameraDemo/CameraDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -287,6 +303,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraDemo/CameraDemo-Prefix.pch";
 				INFOPLIST_FILE = "CameraDemo/CameraDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

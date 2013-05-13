@@ -42,7 +42,8 @@
     NSComparisonResult result = [url.path compare: @"/test-page"];
     if (result == NSOrderedSame)
         return YES;
-    self.view.window.rootViewController = [[[CameraView alloc]initWithNibName:@"CameraView" bundle:nil]autorelease];
+    CameraView * cameraView = [[[CameraView alloc]initWithNibName:@"CameraView" bundle:nil]autorelease];
+    [self presentViewController: cameraView animated: YES completion: nil];
     return NO;
 }
 

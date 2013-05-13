@@ -39,6 +39,12 @@
                               above: [[self.view.layer sublayers] objectAtIndex:11]];    
 }
 
+- (void)viewWillUnload
+{
+    [sink close];
+    [sink release];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -61,7 +67,7 @@
 
 - (IBAction)onBackButtonDown:(id)sender
 {
-    [self.view removeFromSuperview];
+    [self dismissViewControllerAnimated: YES completion: nil];
 }
 
 @end

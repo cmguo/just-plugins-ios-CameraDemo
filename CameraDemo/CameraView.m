@@ -16,6 +16,7 @@
 
 @implementation CameraView
 {
+    NSString * url_;
     PpboxSink * sink;
 }
 
@@ -28,15 +29,20 @@
     return self;
 }
 
+- (void) setUrl: (NSString *)url
+{
+    url_ = url;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     sink = [[PpboxSink alloc] init];
-    [sink open: @"rtmp://192.168.14.205/live/capture"];
+    [sink open: url_];
     [self.view.layer insertSublayer: sink.previewLayer
-                              above: [[self.view.layer sublayers] objectAtIndex:11]];    
+                              above: [[self.view.layer sublayers] objectAtIndex: 11]];    
 }
 
 - (void)viewWillUnload

@@ -14,4 +14,6 @@
 - (IBAction)onStopButtonDown:(id)sender;
 - (IBAction)onBackButtonDown:(id)sender;
 
+- (void) setUrl: (NSString *)url;
+
 @end

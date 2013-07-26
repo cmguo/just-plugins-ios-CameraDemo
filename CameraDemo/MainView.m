@@ -38,14 +38,19 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    NSURL * url = request.URL;
-    NSComparisonResult result = [url.path compare: @"/test-page/capture.htm"];
-    if (result == NSOrderedSame)
+    NSString * url = request.URL.absoluteString;
+    if (![url hasPrefix: @"capture:"])
         return YES;
     CameraView * cameraView = [[[CameraView alloc]initWithNibName:@"CameraView" bundle:nil]autorelease];
-    [cameraView setUrl: url.absoluteString];
+    [cameraView setUrl: [url substringFromIndex: 8]];
     [self presentViewController: cameraView animated: YES completion: nil];
     return NO;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSString * script = @"var ios_capture = new Object(); ios_capture.capture = function(url) {document.location.href = \"capture:\" + url;}";
+    [webView stringByEvaluatingJavaScriptFromString: script];
 }
 
 - (void)didReceiveMemoryWarning

@@ -289,11 +289,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraDemo/CameraDemo-Prefix.pch";
 				INFOPLIST_FILE = "CameraDemo/CameraDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi\"",
 					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/ppbox-dsdsjxqwwyyomdeytohsqhntgunl/Build/Products/Debug-iphoneos\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
@@ -307,6 +309,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraDemo/CameraDemo-Prefix.pch";
 				INFOPLIST_FILE = "CameraDemo/CameraDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi\"",
@@ -338,6 +341,7 @@
 				9F49E5EA173C859700A9658A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

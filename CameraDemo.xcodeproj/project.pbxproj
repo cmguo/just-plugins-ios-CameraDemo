@@ -24,8 +24,8 @@
 		9F49E60A173CB3BA00A9658A /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49E608173CB3BA00A9658A /* CameraView.m */; };
 		9F49E60B173CB3BA00A9658A /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F49E609173CB3BA00A9658A /* CameraView.xib */; };
 		9F49E60F173CF0D900A9658A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49E60E173CF0D900A9658A /* libstdc++.dylib */; };
-		9F49E62C173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49E62B173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a */; };
-		9F49E62E173CF31400A9658A /* ppbox.conf in Resources */ = {isa = PBXBuildFile; fileRef = 9F49E62D173CF31300A9658A /* ppbox.conf */; };
+		9F49E62C173CF28400A9658A /* libjust-ios-armv7-gcc42-mt-sgd-1.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49E62B173CF28400A9658A /* libjust-ios-armv7-gcc42-mt-sgd-1.2.0.a */; };
+		9F49E62E173CF31400A9658A /* just.conf in Resources */ = {isa = PBXBuildFile; fileRef = 9F49E62D173CF31300A9658A /* just.conf */; };
 		9F49E6301740798C00A9658A /* libPpboxSink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49E62F1740798C00A9658A /* libPpboxSink.a */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +53,9 @@
 		9F49E608173CB3BA00A9658A /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
 		9F49E609173CB3BA00A9658A /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
 		9F49E60E173CF0D900A9658A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		9F49E62B173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a"; path = "../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi/libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a"; sourceTree = "<group>"; };
-		9F49E62D173CF31300A9658A /* ppbox.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ppbox.conf; sourceTree = "<group>"; };
-		9F49E62F1740798C00A9658A /* libPpboxSink.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPpboxSink.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ppbox-dsdsjxqwwyyomdeytohsqhntgunl/Build/Products/Debug-iphoneos/libPpboxSink.a"; sourceTree = "<group>"; };
+		9F49E62B173CF28400A9658A /* libjust-ios-armv7-gcc42-mt-sgd-1.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjust-ios-armv7-gcc42-mt-sgd-1.2.0.a"; path = "../../../../ios-armv7.ipad/just/just/debug/static2/multi/libjust-ios-armv7-gcc42-mt-sgd-1.2.0.a"; sourceTree = "<group>"; };
+		9F49E62D173CF31300A9658A /* just.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = just.conf; sourceTree = "<group>"; };
+		9F49E62F1740798C00A9658A /* libPpboxSink.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPpboxSink.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/just-dsdsjxqwwyyomdeytohsqhntgunl/Build/Products/Debug-iphoneos/libPpboxSink.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F49E6301740798C00A9658A /* libPpboxSink.a in Frameworks */,
-				9F49E62C173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a in Frameworks */,
+				9F49E62C173CF28400A9658A /* libjust-ios-armv7-gcc42-mt-sgd-1.2.0.a in Frameworks */,
 				9F49E60F173CF0D900A9658A /* libstdc++.dylib in Frameworks */,
 				9F49E606173C90D000A9658A /* CoreVideo.framework in Frameworks */,
 				9F49E604173C90C800A9658A /* CoreMedia.framework in Frameworks */,
@@ -98,7 +98,7 @@
 		9F49E5CD173C859700A9658A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F49E62B173CF28400A9658A /* libppbox-ios-armv7-gcc42-mt-sgd-1.2.0.a */,
+				9F49E62B173CF28400A9658A /* libjust-ios-armv7-gcc42-mt-sgd-1.2.0.a */,
 				9F49E62F1740798C00A9658A /* libPpboxSink.a */,
 				9F49E60E173CF0D900A9658A /* libstdc++.dylib */,
 				9F49E605173C90D000A9658A /* CoreVideo.framework */,
@@ -123,7 +123,7 @@
 				9F49E5FA173C8A4F00A9658A /* MainView.h */,
 				9F49E5FB173C8A4F00A9658A /* MainView.m */,
 				9F49E5FC173C8A4F00A9658A /* MainView.xib */,
-				9F49E62D173CF31300A9658A /* ppbox.conf */,
+				9F49E62D173CF31300A9658A /* just.conf */,
 			);
 			path = CameraDemo;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 				9F49E5E5173C859700A9658A /* Default-568h@2x.png in Resources */,
 				9F49E5FE173C8A4F00A9658A /* MainView.xib in Resources */,
 				9F49E60B173CB3BA00A9658A /* CameraView.xib in Resources */,
-				9F49E62E173CF31400A9658A /* ppbox.conf in Resources */,
+				9F49E62E173CF31400A9658A /* just.conf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +292,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi\"",
-					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/ppbox-dsdsjxqwwyyomdeytohsqhntgunl/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../../ios-armv7.ipad/just/just/debug/static2/multi\"",
+					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/just-dsdsjxqwwyyomdeytohsqhntgunl/Build/Products/Debug-iphoneos\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,8 +312,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../ios-armv7.ipad/ppbox/ppbox/debug/static2/multi\"",
-					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/ppbox-dsdsjxqwwyyomdeytohsqhntgunl/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../../ios-armv7.ipad/just/just/debug/static2/multi\"",
+					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/just-dsdsjxqwwyyomdeytohsqhntgunl/Build/Products/Debug-iphoneos\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
